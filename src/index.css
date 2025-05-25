@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import "./assets/fonts/LeckerliOne-Regular.css";
+
+@theme {
+  --font-LeckerliOne: "LeckerliOne", cursive;
+  --color-backgroundColor: #FAFAFA;
+  --color-text-h1: #356969;
+  --color-colorbluedark:#002333;
+  --color-notify: #eaeded;
+  --color-funcionality:#78ABBE;
+}
+
+.no-marker summary {
+  list-style: none;
+}
+.no-marker summary::-webkit-details-marker {
+  display: none;
+}
+
+.box-shadow-card {
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+input:disabled {
+  background: #ccc;
+}
