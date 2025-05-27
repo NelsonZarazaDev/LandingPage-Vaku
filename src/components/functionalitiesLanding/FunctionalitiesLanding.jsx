@@ -12,7 +12,7 @@ import { useInView } from "react-intersection-observer";
 
 const timelineItems = [
   { label: "Recordatorios de vacunas", icon: Bell },
-  { label: "Localización de centros de vacunación", icon: location },
+  { label: "Disponibilidad en diversos centros asistenciales.", icon: location },
   { label: "Gestión de vacunación para los niños", icon: edit },
   { label: "Historial de vacunas", icon: report },
   { label: "Nuevas dosis", icon: star, last: true },
@@ -45,13 +45,13 @@ export default function FunctionalitiesLanding() {
   };
 
   return (
-    <div className="h-full">
-      <div className="bg-funcionality rounded-2xl p-2 px-5 lg:px-10 flex justify-end items-center h-auto relative overflow-hidden">
-        <div className="w-full hidden md:block">
+    <div className="w-full lg:w-auto h-auto flex justify-center">
+      <div className="xl:w-3/5 bg-funcionality rounded-2xl p-2 lg:px-10 flex justify-end items-center h-auto relative overflow-hidden">
+        <div className="w-full lg:w-1/2 hidden md:block">
           <img src={functionalities} alt="funcionalidades" />
         </div>
 
-        <div className="w-full flex flex-col items-end relative">
+        <div className="w-full lg:w-2/3 flex flex-col items-end relative">
           <motion.div
             className="w-full text-center lg:text-end text-xl lg:text-3xl font-bold text-white mb-6"
             initial={{ opacity: 0, y: 20 }}

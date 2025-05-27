@@ -26,7 +26,7 @@ export default function StatisticsTextLanding() {
       className="lg:flex w-full h-full lg:justify-center lg:items-center space-y-6 lg:space-y-0 lg:space-x-10 px-4"
     >
       <motion.div
-        className="flex-1 max-w-lg"
+        className="lg:w-2/4"
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         variants={textVariants}
@@ -42,7 +42,7 @@ export default function StatisticsTextLanding() {
       </motion.div>
 
       <motion.div
-        className="flex-1 w-full max-w-md h-56 md:h-72 lg:pt-4"
+        className="lg:w-2/4 h-64 md:h-72 lg:pt-4"
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         variants={graphVariants}

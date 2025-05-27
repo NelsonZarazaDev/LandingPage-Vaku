@@ -14,14 +14,14 @@ export default function BarLogosLanding() {
       initial={{ opacity: 0, y: 50 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8 }}
-      className="w-full h-[14%] lg:h-1/4 p-4 flex justify-around grayscale bg-white"
+      className="w-full flex items-center justify-center gap-6 grayscale bg-white my-8"
     >
       {[lasVacunas, logoSalud, objetivoSostenible].map((logo, index) => (
         <motion.img
           key={index}
           src={logo}
           alt={`logo-${index}`}
-          className="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+          className="h-auto max-w-1/5 lg:max-w-[12%] object-contain transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={inView ? { opacity: 1, scale: 1 } : {}}
           transition={{ delay: 0.2 * index, duration: 0.5 }}

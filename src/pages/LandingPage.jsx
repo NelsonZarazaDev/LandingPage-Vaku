@@ -10,16 +10,16 @@ import Footer from "../components/footer/Footer";
 export default function LandingPage() {
   return (
     <>
-      <div className="h-dvh">
+      <div className="h-auto">
         <NavbarLanding />
         <div className="flex flex-col justify-center">
           <StartLanding />
         </div>
       </div>
 
-      <div className="h-dvh space-y-10 flex flex-col justify-center ">
+      <div className="space-y-10 flex flex-col justify-center">
         <BarLogosLanding />
-        <div className="relative h-dvh md:px-25">
+        <div className="relative h-auto md:px-25">
           <ScopeLanding />
           <div
             className=" hidden lg:block
@@ -39,7 +39,7 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <div className="h-dvh px-4 lg:px-25 flex flex-col overflow-visible">
+      <div className="h-auto px-4 space-y-9 lg:px-25 flex flex-col overflow-visible">
         <div className="relative flex-grow-[0.4]">
           <StatisticsText />
           <div
@@ -66,7 +66,7 @@ export default function LandingPage() {
       </div>
 
       <div className="h-dvh flex flex-col mt-8 md:mt-0">
-        <div className="pt-[60px] px-3 md:px-25 space-y-10">
+        <div className="px-3 md:px-25 space-y-10">
           <FrequentlyAskedQuestionsLanding />
         </div>
         <Footer />

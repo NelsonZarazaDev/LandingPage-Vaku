@@ -15,7 +15,7 @@ export default function FrequentlyAskedQuestionsLanding() {
   return (
     <>
       <motion.h1
-        className="text-center text-xl lg:text-4xl font-bold text-text-h1 my-4"
+        className="text-center text-xl lg:text-4xl font-bold text-text-h1 my-4 md:my-8"
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -52,7 +52,12 @@ export default function FrequentlyAskedQuestionsLanding() {
               overflow: "visible",
               transition: { duration: 0.3, ease: "easeInOut" },
             },
-            exit: { opacity: 0, height: 0, overflow: "hidden", transition: { duration: 0.3, ease: "easeInOut" } },
+            exit: {
+              opacity: 0,
+              height: 0,
+              overflow: "hidden",
+              transition: { duration: 0.3, ease: "easeInOut" },
+            },
           };
 
           return (
@@ -75,8 +80,11 @@ export default function FrequentlyAskedQuestionsLanding() {
                 }}
               >
                 <div className="flex items-center">
-                  <div className="w-8 mx-4">
-                    <Lottie animationData={alert} />
+                  <div className="relative w-8 h-8 mx-4 overflow-hidden">
+                    <Lottie
+                      animationData={alert}
+                      className="absolute top-1/2 left-1/2 w-8 h-8 -translate-x-1/2 -translate-y-1/2 scale-[0.8]"
+                    />
                   </div>
 
                   <p className="font-bold">{item.question}</p>

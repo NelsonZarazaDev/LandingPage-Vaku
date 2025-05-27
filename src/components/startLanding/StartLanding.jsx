@@ -70,9 +70,12 @@ export default function StartLanding() {
             Más vacunas, menos preocupaciones
           </h1>
           <p>
-            Vacunarse es una forma sencilla de proteger lo que más importa, la
-            salud de tu familia y tu comunidad. Hagamos que cuidarnos sea parte
-            de lo cotidiano.
+            Vacunarse es un acto de amor y responsabilidad. Es una manera
+            sencilla, pero poderosa, de proteger a quienes más queremos:
+            nuestros hijos, nuestros abuelos, nuestras amistades y a toda la
+            comunidad. Las vacunas salvan vidas. Nos cuidan de enfermedades que
+            pueden parecer del pasado, pero que siguen al acecho si dejamos de
+            prevenir.
           </p>
         </motion.div>
       </div>
